@@ -2,8 +2,6 @@
 
 **A markdown editor that publishes straight to Medium — write, preview, and ship without leaving the app.**
 
-![Meditor v0.1.0-beta — light and dark theme](releases/meditor_v0.1.0-beta_screenshot.png)
-
 Meditor is a cross-platform desktop editor (Linux, macOS, Windows) built with
 **Tauri 2 + Svelte 5**. It pairs a clean markdown writing experience with a
 live, Medium-style preview, then publishes your post directly to your Medium
