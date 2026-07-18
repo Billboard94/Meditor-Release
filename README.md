@@ -19,6 +19,7 @@ maintained in a separate private repository and is not published here.
 | Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Published in the main v0.1.0-beta release |
 | Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Needs FUSE |
 | macOS | `meditor_0.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the macOS release |
+| Windows | `meditor_0.1.0_x64-setup.exe` | x86_64 | NSIS installer, attached to the macOS release |
 
 ## Install
 
@@ -33,6 +34,10 @@ maintained in a separate private repository and is not published here.
      - **Right-click** the app → **Open**, then click **Open** again, **or**
      - System Settings → Privacy & Security → allow Meditor under
        *"Developer was not identified"*.
+- **Windows:** download `releases/meditor_0.1.0_x64-setup.exe` and run it. Because
+  the installer is **not yet code-signed**, SmartScreen may warn that it's an
+  unrecognized app. Click **More info → Run anyway** to install. Meditor then
+  stores your Medium token in Windows Credential Manager.
 
 ## Notes for testers
 
