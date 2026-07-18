@@ -1,3 +1,14 @@
 # Nothing sensitive here, but keep the repo to release artifacts only.
 .DS_Store
 *.log
+
+# Binary packages are distributed as GitHub Release assets, not committed to git
+# (keeps clones small; GitHub warns above 50 MB).
+releases/*.deb
+releases/*.AppImage
+releases/*.dmg
+releases/*.zip
+releases/*.tar.gz
+releases/*.msi
+releases/*.rpm
+
