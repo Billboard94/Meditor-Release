@@ -15,7 +15,7 @@ maintained in a separate private repository and is not published here.
 | Platform | Package | Architecture | Notes |
 |----------|---------|--------------|-------|
 | Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Published in the main v0.1.0-beta release |
-| Linux (portable) | `meditor_0.1.0.AppImage` | x86_64 | Needs FUSE |
+| Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Needs FUSE |
 | macOS | `meditor_0.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the macOS release |
 
 ## Install
