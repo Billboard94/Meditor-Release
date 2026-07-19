@@ -19,6 +19,7 @@ maintained in a separate private repository and is not published here.
 | Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Published in the main v0.1.0-beta release |
 | Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Needs FUSE |
 | macOS | `meditor_0.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the macOS release |
+| macOS (portable) | `meditor.app` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the macOS release |
 | Windows | `meditor_0.1.0_x64-setup.exe` | x86_64 | NSIS installer, attached to the macOS release |
 
 ## Install
@@ -26,9 +27,11 @@ maintained in a separate private repository and is not published here.
 - **Debian/Ubuntu:** `sudo dpkg -i meditor_0.1.0_amd64.deb`
 - **Portable (any Linux):** download the `.AppImage`, `chmod +x`, and run it.
 - **macOS (Apple Silicon):**
-  1. Download `releases/meditor_0.1.0_aarch64.dmg`.
+  1. Download `releases/meditor_0.1.0_aarch64.dmg` (or `meditor.app` if you
+     prefer the uncompressed bundle).
   2. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
-     from the mounted volume).
+     from the mounted volume). If you grabbed `meditor.app`, move it to
+     Applications directly.
   3. Because this build is **not yet signed or notarized**, macOS will show a
      Gatekeeper warning ("app is from an unidentified developer"). To run it:
      - **Right-click** the app → **Open**, then click **Open** again, **or**
