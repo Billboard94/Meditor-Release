@@ -2,7 +2,7 @@
 
 **A markdown editor that publishes straight to Medium — write, preview, and ship without leaving the app.**
 
-![Meditor v0.1.0-beta — light & dark theme](releases/meditor_v0.1.0-beta_screenshot.png)
+![Meditor v0.1.1-beta — light & dark theme](releases/meditor_v0.1.0-beta_screenshot.png)
 
 Meditor is a cross-platform desktop editor (Linux, macOS, Windows) built with
 **Tauri 2 + Svelte 5**. It pairs a clean markdown writing experience with a
@@ -20,7 +20,7 @@ maintained in a separate private repository and is not published here.
 | Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Needs FUSE |
 | macOS | `meditor_0.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the macOS release |
 | macOS (portable) | `meditor.app` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the macOS release |
-| Windows | `meditor_0.1.0_x64-setup.exe` | x86_64 | NSIS installer, attached to the macOS release |
+| Windows | `meditor_0.1.1-beta_x64-setup.exe` | x86_64 | NSIS installer |
 
 ## Install
 
@@ -37,7 +37,7 @@ maintained in a separate private repository and is not published here.
      - **Right-click** the app → **Open**, then click **Open** again, **or**
      - System Settings → Privacy & Security → allow Meditor under
        *"Developer was not identified"*.
-- **Windows:** download `releases/meditor_0.1.0_x64-setup.exe` and run it. Because
+- **Windows:** download `releases/meditor_0.1.1-beta_x64-setup.exe` and run it. Because
   the installer is **not yet code-signed**, SmartScreen may warn that it's an
   unrecognized app. Click **More info → Run anyway** to install. Meditor then
   stores your Medium token in Windows Credential Manager.
