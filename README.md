@@ -12,13 +12,18 @@ profile.
 This repository contains **compiled release packages only**. Source code is
 maintained in a separate private repository and is not published here.
 
+## What's New in v1.0.0
+
+- **Inline Image Uploads** — Drag, paste, or click-to-upload images directly into your editor. Images are automatically uploaded and inserted as Markdown image syntax. No more manually hosting images or copy-pasting URLs.
+- Full stable release with all core features production-ready.
+
 ## Downloads
 
 | Platform | Package | Architecture | Notes |
 |----------|---------|--------------|-------|
 | macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
 | macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
-| Windows | `meditor_0.1.1-beta_x64-setup.exe` | x86_64 | NSIS installer; last built for v0.1.1-beta, not yet rebuilt for 1.0.0 |
+| Windows | `meditor_1.0.0_x64-setup.exe` | x86_64 | NSIS installer, v1.0.0 |
 | Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0 |
 | Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0. Needs FUSE |
 
@@ -37,7 +42,7 @@ maintained in a separate private repository and is not published here.
      - **Right-click** the app → **Open**, then click **Open** again, **or**
      - System Settings → Privacy & Security → allow Meditor under
        *"Developer was not identified"*.
-- **Windows:** download `releases/meditor_0.1.1-beta_x64-setup.exe` and run it. Because
+- **Windows:** download `releases/meditor_1.0.0_x64-setup.exe` and run it. Because
   the installer is **not yet code-signed**, SmartScreen may warn that it's an
   unrecognized app. Click **More info → Run anyway** to install. Meditor then
   stores your Medium token in Windows Credential Manager.
@@ -47,7 +52,8 @@ maintained in a separate private repository and is not published here.
 - The Medium integration token is **write-only**: it can publish, but can't
   pull your existing posts back for editing. Edit locally and republish to
   revise.
-- S3 image hosting isn't wired up yet — use Imgur or Cloudinary for now.
+- Inline image uploads require a configured hosting endpoint. Images are
+  uploaded externally and linked in your post.
 - The AppImage needs FUSE to run (standard for AppImages; Arch users may need
   `fusermount` from `fuse2`).
 - `.deb` is for Debian/Ubuntu. Arch users: an AppImage is provided, and a
