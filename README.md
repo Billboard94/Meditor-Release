@@ -2,7 +2,7 @@
 
 **A markdown editor that publishes straight to Medium — write, preview, and ship without leaving the app.**
 
-![Meditor v0.1.1-beta — light & dark theme](releases/meditor_v0.1.0-beta_screenshot.png)
+![Meditor v1.0.0 — light & dark theme](releases/meditor_v0.1.0-beta_screenshot.png)
 
 Meditor is a cross-platform desktop editor (Linux, macOS, Windows) built with
 **Tauri 2 + Svelte 5**. It pairs a clean markdown writing experience with a
@@ -16,18 +16,18 @@ maintained in a separate private repository and is not published here.
 
 | Platform | Package | Architecture | Notes |
 |----------|---------|--------------|-------|
-| Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Published in the main v0.1.0-beta release |
-| Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Needs FUSE |
-| macOS | `meditor_0.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the macOS release |
-| macOS (portable) | `meditor.app` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the macOS release |
-| Windows | `meditor_0.1.1-beta_x64-setup.exe` | x86_64 | NSIS installer |
+| macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
+| macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
+| Windows | `meditor_0.1.1-beta_x64-setup.exe` | x86_64 | NSIS installer; last built for v0.1.1-beta, not yet rebuilt for 1.0.0 |
+| Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0 |
+| Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0. Needs FUSE |
 
 ## Install
 
 - **Debian/Ubuntu:** `sudo dpkg -i meditor_0.1.0_amd64.deb`
 - **Portable (any Linux):** download the `.AppImage`, `chmod +x`, and run it.
 - **macOS (Apple Silicon):**
-  1. Download `releases/meditor_0.1.0_aarch64.dmg` (or `meditor.app` if you
+  1. Download `releases/meditor_1.0.0_aarch64.dmg` (or `meditor_1.0.0_aarch64_app.zip` if you
      prefer the uncompressed bundle).
   2. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
      from the mounted volume). If you grabbed `meditor.app`, move it to
@@ -58,5 +58,6 @@ maintained in a separate private repository and is not published here.
 
 ## Feedback
 
-This is an early beta and we'd love your input. Found a bug, or want a feature?
-Reach out to the maintainer directly — it shapes what gets built next.
+v1.0.0 is the first stable release and we'd love your input. Found a bug, or
+want a feature? Reach out to the maintainer directly — it shapes what gets
+built next.
