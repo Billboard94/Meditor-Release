@@ -24,13 +24,13 @@ maintained in a separate private repository and is not published here.
 | macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
 | macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
 | Windows | `meditor_1.0.0_x64-setup.exe` | x86_64 | NSIS installer, v1.0.0 |
-| Linux (Debian/Ubuntu) | `meditor_0.1.0_amd64.deb` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0 |
-| Linux (portable) | `meditor_0.1.0_amd64.AppImage` | x86_64 | Last built for v0.1.0-beta; not yet rebuilt for 1.0.0. Needs FUSE |
+| Linux (Debian/Ubuntu) | `meditor_1.0.0_amd64.deb` | x86_64 | Attached to the v1.0.0 release |
+| Linux (portable) | `meditor_1.0.0_amd64.AppImage` | x86_64 | Attached to the v1.0.0 release. Needs FUSE |
 
 ## Install
 
-- **Debian/Ubuntu:** `sudo dpkg -i meditor_0.1.0_amd64.deb`
-- **Portable (any Linux):** download the `.AppImage`, `chmod +x`, and run it.
+- **Debian/Ubuntu:** `sudo dpkg -i meditor_1.0.0_amd64.deb` or `sudo apt install ./meditor_1.0.0_amd64.deb` (resolves deps automatically).
+- **Portable (any Linux):** download `meditor_1.0.0_amd64.AppImage`, `chmod +x`, and run it. Requires FUSE (`fuse2` on Arch, `libfuse2` on Debian/Ubuntu).
 - **macOS (Apple Silicon):**
   1. Download `releases/meditor_1.0.0_aarch64.dmg` (or `meditor_1.0.0_aarch64_app.zip` if you
      prefer the uncompressed bundle).
