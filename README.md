@@ -12,6 +12,23 @@ profile.
 This repository contains **compiled release packages only**. Source code is
 maintained in a separate private repository and is not published here.
 
+## What's New in v1.1.0
+
+- **Private Writing Statistics** — An opt-in, local-only counter that credits
+  only what you **actually typed** in the editor. Opened files, restored
+  drafts, pasted or dropped text, undo/redo and generated content count for
+  zero. Aggregates never leave your machine — they live in app-local storage
+  that survives app updates and is never silently reset.
+- **100-Trophy Cabinet** — A calm, private achievement list: 50 bronze, 30
+  silver and 20 gold trophies. No points, no ranks, no leaderboards, no
+  streaks. Includes today/lifetime summaries, a seven-day rhythm chart, and
+  status/tier/category filters — all with light/dark themes and accessibility
+  support.
+- **Successful-publish tracking** — Published posts are recorded in your
+  private statistics.
+- **Polish** — Icon controls in the title bar, native traffic-light styling,
+  indented ordered lists in the live preview, and image-hosting hardening.
+
 ## What's New in v1.0.0
 
 - **Inline Image Uploads** — Drag, paste, or click-to-upload images directly into your editor. Images are automatically uploaded and inserted as Markdown image syntax. No more manually hosting images or copy-pasting URLs.
@@ -21,6 +38,7 @@ maintained in a separate private repository and is not published here.
 
 | Platform | Package | Architecture | Notes |
 |----------|---------|--------------|-------|
+| macOS | `meditor_1.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.1.0 release |
 | macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
 | macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
 | Windows | `meditor_1.0.0_x64-setup.exe` | x86_64 | NSIS installer, v1.0.0 |
@@ -32,7 +50,7 @@ maintained in a separate private repository and is not published here.
 - **Debian/Ubuntu:** `sudo dpkg -i meditor_1.0.0_amd64.deb` or `sudo apt install ./meditor_1.0.0_amd64.deb` (resolves deps automatically).
 - **Portable (any Linux):** download `meditor_1.0.0_amd64.AppImage`, `chmod +x`, and run it. Requires FUSE (`fuse2` on Arch, `libfuse2` on Debian/Ubuntu).
 - **macOS (Apple Silicon):**
-  1. Download `releases/meditor_1.0.0_aarch64.dmg` (or `meditor_1.0.0_aarch64_app.zip` if you
+  1. Download `releases/meditor_1.1.0_aarch64.dmg` (or `meditor_1.0.0_aarch64_app.zip` if you
      prefer the uncompressed bundle).
   2. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
      from the mounted volume). If you grabbed `meditor.app`, move it to
