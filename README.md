@@ -56,6 +56,8 @@ maintained in a separate private repository and is not published here.
 |----------|---------|--------------|-------|
 | macOS | `Meditor_1.2.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Latest release, v1.2.0 |
 | macOS (portable) | `Meditor_1.2.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, v1.2.0 |
+| macOS | `Meditor_1.2.0_x86_64.dmg` | Intel (x86_64) | Latest release, v1.2.0 |
+| macOS (portable) | `Meditor_1.2.0_x86_64_app.zip` | Intel (x86_64) | Uncompressed app bundle, v1.2.0 |
 | macOS | `meditor_1.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.1.0 release |
 | macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
 | macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
@@ -70,10 +72,10 @@ maintained in a separate private repository and is not published here.
 
 - **Debian/Ubuntu:** `sudo dpkg -i meditor_1.1.0_amd64.deb` or `sudo apt install ./meditor_1.1.0_amd64.deb` (resolves deps automatically).
 - **Portable (any Linux):** download `meditor_1.1.0_amd64.AppImage`, `chmod +x`, and run it. Requires FUSE (`fuse2` on Arch, `libfuse2` on Debian/Ubuntu).
-- **macOS (Apple Silicon):**
-  1. Download `releases/Meditor_1.2.0_aarch64.dmg` (or `Meditor_1.2.0_aarch64_app.zip` if
-     you prefer the uncompressed bundle).
-  2. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
+- **macOS:** download `releases/Meditor_1.2.0_aarch64.dmg` on Apple Silicon
+  (or `Meditor_1.2.0_x86_64.dmg` on Intel). Prefer the `_app.zip` if you want
+  the uncompressed bundle instead. Pick the file matching your chip.
+  1. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
      from the mounted volume). If you grabbed the app zip, unzip and move
      **Meditor.app** to Applications directly.
   3. Because this build is **not yet signed or notarized**, macOS will show a
@@ -97,9 +99,9 @@ maintained in a separate private repository and is not published here.
   `fusermount` from `fuse2`).
 - `.deb` is for Debian/Ubuntu. Arch users: an AppImage is provided, and a
   PKGBUILD is on the way.
-- **macOS:** Apple Silicon only. Intel Macs require a separate `x86_64` build
-  (not yet provided). The macOS build is currently unsigned — see the macOS
-  install steps above to bypass Gatekeeper.
+- **macOS:** Apple Silicon and Intel (x86_64) builds are both provided. The
+  macOS build is currently unsigned — see the macOS install steps above to
+  bypass Gatekeeper.
 
 ## Feedback
 
