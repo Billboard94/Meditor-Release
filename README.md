@@ -12,6 +12,22 @@ profile.
 This repository contains **compiled release packages only**. Source code is
 maintained in a separate private repository and is not published here.
 
+## What's New in v1.2.0
+
+- **PDF Export** — Export the current document to a styled A4 PDF (embedded
+  Fira fonts, page numbers, links, tables, blockquotes, inlined local + remote
+  images) via a native save dialog. `Cmd/Ctrl+E`.
+- **Automatic Document Backups** — Drafts are backed up locally and settings
+  are consolidated into one Backup panel, so a crash or accidental close never
+  loses your writing.
+- **Statistics & Trophies Backup** — Your stats and trophy progress are backed
+  up too, and can be exported/imported as a JSON file to move devices or
+  reinstall without losing progress.
+- **Keyring persistence fix** — Save-to-keyring now uses the native macOS /
+  Windows / Linux secret stores so your Medium token actually persists.
+- **New look** — Nearfield dark theme with gradient accents, a light/dark
+  theme toggle, refreshed app icon, and new trophy artwork.
+
 ## What's New in v1.1.0
 
 - **Private Writing Statistics** — An opt-in, local-only counter that credits
@@ -38,6 +54,8 @@ maintained in a separate private repository and is not published here.
 
 | Platform | Package | Architecture | Notes |
 |----------|---------|--------------|-------|
+| macOS | `Meditor_1.2.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Latest release, v1.2.0 |
+| macOS (portable) | `Meditor_1.2.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, v1.2.0 |
 | macOS | `meditor_1.1.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.1.0 release |
 | macOS | `meditor_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3) | Attached to the v1.0.0 release |
 | macOS (portable) | `meditor_1.0.0_aarch64_app.zip` | Apple Silicon (M1/M2/M3) | Uncompressed app bundle, attached to the v1.0.0 release |
@@ -53,11 +71,11 @@ maintained in a separate private repository and is not published here.
 - **Debian/Ubuntu:** `sudo dpkg -i meditor_1.1.0_amd64.deb` or `sudo apt install ./meditor_1.1.0_amd64.deb` (resolves deps automatically).
 - **Portable (any Linux):** download `meditor_1.1.0_amd64.AppImage`, `chmod +x`, and run it. Requires FUSE (`fuse2` on Arch, `libfuse2` on Debian/Ubuntu).
 - **macOS (Apple Silicon):**
-  1. Download `releases/meditor_1.1.0_aarch64.dmg` (or `meditor_1.0.0_aarch64_app.zip` if you
-     prefer the uncompressed bundle).
+  1. Download `releases/Meditor_1.2.0_aarch64.dmg` (or `Meditor_1.2.0_aarch64_app.zip` if
+     you prefer the uncompressed bundle).
   2. Open the `.dmg` and drag **Meditor** to Applications (or run it directly
-     from the mounted volume). If you grabbed `meditor.app`, move it to
-     Applications directly.
+     from the mounted volume). If you grabbed the app zip, unzip and move
+     **Meditor.app** to Applications directly.
   3. Because this build is **not yet signed or notarized**, macOS will show a
      Gatekeeper warning ("app is from an unidentified developer"). To run it:
      - **Right-click** the app → **Open**, then click **Open** again, **or**
